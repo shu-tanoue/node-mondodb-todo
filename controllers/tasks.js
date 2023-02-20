@@ -16,7 +16,6 @@ const updateTask = (req, res) => {
 const deleteTask = (req, res) => {
   res.send("ある特定のタスクを削除しました");
 };
-
 module.exports = {
   getAllTasks,
   createTask,
