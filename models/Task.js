@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const TaskSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [ture, "タスク名を入れる"],
-    trum: ture,
+    required: [true, "タスク名を入れる"],
+    trim: true,
     maxlength: [20, "タスク名は、20文字以内で入力"],
   },
   completed: {

@@ -4,6 +4,7 @@ const POST = 5000;
 const taskRoute = require("./routers/tasks");
 const connectDB = require("./db/connect");
 require("dotenv").config();
+app.use(express.json());
 
 //ルーティング設計
 app.use("/api/v1/tasks", taskRoute);
