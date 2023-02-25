@@ -20,6 +20,7 @@ const createTask = async (req, res) => {
   }
 };
 //特定のタスクを所得するところ.一つだけをピックする
+
 const getSingeTask = async (req, res) => {
   try {
     const getSingleTask = await Task.findOne({ _id: req.params.id });
